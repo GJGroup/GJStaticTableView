@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <UITableView+FDTemplateLayoutCell.h>
+#import "GJStaticCellPotocol.h"
 
 BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
     if (obj &&
@@ -58,7 +59,6 @@ BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
         cls = cls.superclass;
     }
 }
-
 
 //R	The property is read-only (readonly).
 //C	The property is a copy of the value last assigned (copy).
@@ -160,8 +160,8 @@ BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
     
     return nil;
 }
-#pragma mark - dataSource
 
+#pragma mark - dataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (canResponseProtocolMethod(self.gj_dataSource, @protocol(UITableViewDataSource), _cmd))
         return [self.gj_dataSource numberOfSectionsInTableView:tableView];
@@ -175,10 +175,16 @@ BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = self._cells[indexPath.row];
+    if ([cell conformsToProtocol:@protocol(GJStaticCellPotocol)] &&
+        [cell respondsToSelector:@selector(gj_rowHeight)]) {
+        
+        return [(UITableViewCell<GJStaticCellPotocol> *)cell gj_rowHeight];
+    }
+    
     if (canResponseProtocolMethod(self.gj_delegate, @protocol(UITableViewDelegate), _cmd))
         return [self.gj_delegate tableView:tableView heightForRowAtIndexPath:indexPath];
     
-    id cell = self._cells[indexPath.row];
     CGFloat height = [tableView fd_heightForCellWithIdentifier:NSStringFromClass([cell class]) configuration:^(id cell) {
     }];
     return height;

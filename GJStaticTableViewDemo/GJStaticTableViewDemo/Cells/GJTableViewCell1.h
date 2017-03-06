@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GJStaticCellPotocol.h"
 
-@interface GJTableViewCell1 : UITableViewCell
+
+@interface GJTableViewCell1 : UITableViewCell<GJStaticCellPotocol>
 
 @end

@@ -50,6 +50,7 @@
 		424B518A1E696915003BFCBE /* GJTableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJTableViewCell3.xib; sourceTree = "<group>"; };
 		424B518D1E69691D003BFCBE /* GJTableViewCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTableViewCell4.h; sourceTree = "<group>"; };
 		424B518E1E69691D003BFCBE /* GJTableViewCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTableViewCell4.m; sourceTree = "<group>"; };
+		424B51BD1E6D11FC003BFCBE /* GJStaticCellPotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJStaticCellPotocol.h; sourceTree = "<group>"; };
 		A18BAF919FA9A23CD369286C /* Pods-GJStaticTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJStaticTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GJStaticTableViewDemo/Pods-GJStaticTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D7FF7986BFA8B12776B5DE24 /* libPods-GJStaticTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GJStaticTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +127,7 @@
 			children = (
 				424B51791E696031003BFCBE /* GJStaticTableView.h */,
 				424B517A1E696031003BFCBE /* GJStaticTableView.m */,
+				424B51BD1E6D11FC003BFCBE /* GJStaticCellPotocol.h */,
 			);
 			name = GJStaticTableView;
 			path = ../GJStaticTableView;

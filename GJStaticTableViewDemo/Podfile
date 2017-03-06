@@ -4,5 +4,6 @@ target 'GJStaticTableViewDemo' do
 xcodeproj 'GJStaticTableViewDemo.xcodeproj'
 
 	pod 'UITableView+FDTemplateLayoutCell'
+    pod 'Masonry'
 
 end

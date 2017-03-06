@@ -18,6 +18,10 @@
     return self;
 }
 
+- (CGFloat)gj_rowHeight {
+    return 120;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

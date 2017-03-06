@@ -24,6 +24,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    return nil;
+//}
+
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    if (indexPath.row == 1) {
 //        return [tableView fd_heightForCellWithIdentifier:NSStringFromClass(self.tableView.cell2.class) configuration:^(id cell) {}];

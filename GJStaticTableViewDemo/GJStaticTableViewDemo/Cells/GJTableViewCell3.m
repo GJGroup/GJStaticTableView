@@ -16,6 +16,10 @@
     self.textLabel.text = @"cell 3";
 }
 
+- (CGFloat)gj_rowHeight {
+    return 50;
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
