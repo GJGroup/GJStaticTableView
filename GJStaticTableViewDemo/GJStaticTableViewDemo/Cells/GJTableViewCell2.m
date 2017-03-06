@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.contetnLabel.text = @"这是一个静态的TableView控件，你可以通过继承GJStaticTableView自定义你的TabelView，通常你只需在.h文件中使用@property按顺序声明你的Cell，即可在界面中看到你的Cells。";
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

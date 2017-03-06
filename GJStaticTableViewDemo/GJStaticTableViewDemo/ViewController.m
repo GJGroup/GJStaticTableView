@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CustomTableView.h"
 #import <UITableView+FDTemplateLayoutCell.h>
+#import <Masonry.h>
 
 @interface ViewController () <UITableViewDelegate>
 @property (nonatomic, strong) CustomTableView *tableView;
@@ -21,6 +22,9 @@
     self.tableView = [[CustomTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(20, 0, 0, 0));
+    }];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

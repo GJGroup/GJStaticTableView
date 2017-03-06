@@ -10,6 +10,7 @@
 
 @protocol GJStaticCellPotocol <NSObject>
 
-@property (nonatomic, assign) CGFloat gj_rowHeight;
+@property (nonatomic, assign, readonly) CGFloat gj_rowHeight;
 
 @end
+

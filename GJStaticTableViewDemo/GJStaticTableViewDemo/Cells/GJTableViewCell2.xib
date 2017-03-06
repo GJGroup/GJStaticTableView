@@ -11,30 +11,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="GJTableViewCell2">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="GJTableViewCell2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cell 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESS-8f-yeU">
-                        <rect key="frame" x="23" y="0.0" width="41" height="80"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_1" translatesAutoresizingMaskIntoConstraints="NO" id="HyM-eS-pal">
+                        <rect key="frame" x="15" y="8" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="80" id="Jp9-fJ-h7U"/>
+                            <constraint firstAttribute="height" constant="50" id="VMi-E9-FrR"/>
+                            <constraint firstAttribute="width" constant="50" id="W4f-wc-niP"/>
                         </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wangyutao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCK-br-de2">
+                        <rect key="frame" x="75" y="23" width="84" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGP-XU-CYU">
+                        <rect key="frame" x="15" y="66" width="290" height="29.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ESS-8f-yeU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ol9-KP-rwJ"/>
-                    <constraint firstAttribute="bottom" secondItem="ESS-8f-yeU" secondAttribute="bottom" constant="8.5" id="haZ-f9-PJU"/>
-                    <constraint firstItem="ESS-8f-yeU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="ieN-cd-4ZZ"/>
+                    <constraint firstItem="uGP-XU-CYU" firstAttribute="leading" secondItem="HyM-eS-pal" secondAttribute="leading" id="2f6-ea-cjv"/>
+                    <constraint firstItem="qCK-br-de2" firstAttribute="leading" secondItem="HyM-eS-pal" secondAttribute="trailing" constant="10" id="5d0-6h-ubt"/>
+                    <constraint firstItem="HyM-eS-pal" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7r3-vj-LqK"/>
+                    <constraint firstAttribute="bottom" secondItem="uGP-XU-CYU" secondAttribute="bottom" constant="10" id="EY4-sh-9Bl"/>
+                    <constraint firstItem="qCK-br-de2" firstAttribute="centerY" secondItem="HyM-eS-pal" secondAttribute="centerY" id="ZLK-OT-472"/>
+                    <constraint firstAttribute="trailing" secondItem="uGP-XU-CYU" secondAttribute="trailing" constant="15" id="c3E-ET-2f6"/>
+                    <constraint firstItem="HyM-eS-pal" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="l8A-tD-vtY"/>
+                    <constraint firstItem="uGP-XU-CYU" firstAttribute="top" secondItem="HyM-eS-pal" secondAttribute="bottom" constant="8" id="vyW-fs-vII"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="34" y="76.5"/>
+            <connections>
+                <outlet property="contetnLabel" destination="uGP-XU-CYU" id="i2p-AN-QfW"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="85"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="head_1" width="345" height="345"/>
+    </resources>
 </document>

@@ -13,13 +13,14 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.textLabel.text = @"cell 1";
+        self.textLabel.text = @"GJStaticTableView";
+        self.backgroundColor = [UIColor lightGrayColor];
     }
     return self;
 }
 
 - (CGFloat)gj_rowHeight {
-    return 120;
+    return 40;
 }
 
 - (void)awakeFromNib {

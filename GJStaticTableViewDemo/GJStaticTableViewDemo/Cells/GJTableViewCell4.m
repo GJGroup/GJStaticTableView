@@ -13,14 +13,13 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.textLabel.text = @"cell 4";
-        self.detailTextLabel.text = @"detail text";
+        self.textLabel.text = @"目前处于开发阶段，欢迎提出宝贵意见:>";
     }
     return self;
 }
 
 - (CGFloat)gj_rowHeight {
-    return 80;
+    return 50;
 }
 
 - (void)awakeFromNib {

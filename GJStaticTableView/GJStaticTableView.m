@@ -45,19 +45,19 @@ BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
 - (void)loadCells {
     Class cls = self.class;
     
-    while (![cls isEqual:GJStaticTableView.class]) {
+//    while (![cls isEqual:GJStaticTableView.class]) {
         unsigned count = 0;
         objc_property_t *properties = class_copyPropertyList(cls, &count);
         
-        if (properties == NULL) continue;
-        
+//        if (properties == NULL) continue;
+    
         for (unsigned i = 0; i < count; i++) {
             objc_property_t property = properties[i];
             [self loadValidProperty:property];
         }
         free(properties);
         cls = cls.superclass;
-    }
+//    }
 }
 
 //R	The property is read-only (readonly).

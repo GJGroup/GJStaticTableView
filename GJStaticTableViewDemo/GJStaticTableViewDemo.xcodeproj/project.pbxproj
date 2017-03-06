@@ -21,6 +21,8 @@
 		424B518B1E696915003BFCBE /* GJTableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B51891E696915003BFCBE /* GJTableViewCell3.m */; };
 		424B518C1E696915003BFCBE /* GJTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424B518A1E696915003BFCBE /* GJTableViewCell3.xib */; };
 		424B518F1E69691D003BFCBE /* GJTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B518E1E69691D003BFCBE /* GJTableViewCell4.m */; };
+		424B51C41E6D4A64003BFCBE /* GJTableViewCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B51C21E6D4A64003BFCBE /* GJTableViewCell0.m */; };
+		424B51C51E6D4A64003BFCBE /* GJTableViewCell0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424B51C31E6D4A64003BFCBE /* GJTableViewCell0.xib */; };
 		B5ABBBE2217D9054DAF2EBBB /* libPods-GJStaticTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FF7986BFA8B12776B5DE24 /* libPods-GJStaticTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,9 @@
 		424B518D1E69691D003BFCBE /* GJTableViewCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTableViewCell4.h; sourceTree = "<group>"; };
 		424B518E1E69691D003BFCBE /* GJTableViewCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTableViewCell4.m; sourceTree = "<group>"; };
 		424B51BD1E6D11FC003BFCBE /* GJStaticCellPotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJStaticCellPotocol.h; sourceTree = "<group>"; };
+		424B51C11E6D4A64003BFCBE /* GJTableViewCell0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTableViewCell0.h; sourceTree = "<group>"; };
+		424B51C21E6D4A64003BFCBE /* GJTableViewCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTableViewCell0.m; sourceTree = "<group>"; };
+		424B51C31E6D4A64003BFCBE /* GJTableViewCell0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJTableViewCell0.xib; sourceTree = "<group>"; };
 		A18BAF919FA9A23CD369286C /* Pods-GJStaticTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJStaticTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GJStaticTableViewDemo/Pods-GJStaticTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D7FF7986BFA8B12776B5DE24 /* libPods-GJStaticTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GJStaticTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +141,9 @@
 		424B517C1E696091003BFCBE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				424B51C11E6D4A64003BFCBE /* GJTableViewCell0.h */,
+				424B51C21E6D4A64003BFCBE /* GJTableViewCell0.m */,
+				424B51C31E6D4A64003BFCBE /* GJTableViewCell0.xib */,
 				424B517D1E69618C003BFCBE /* GJTableViewCell1.h */,
 				424B517E1E69618C003BFCBE /* GJTableViewCell1.m */,
 				424B51801E6961B8003BFCBE /* GJTableViewCell2.h */,
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424B51711E6959C7003BFCBE /* LaunchScreen.storyboard in Resources */,
+				424B51C51E6D4A64003BFCBE /* GJTableViewCell0.xib in Resources */,
 				424B516E1E6959C7003BFCBE /* Assets.xcassets in Resources */,
 				424B516C1E6959C7003BFCBE /* Main.storyboard in Resources */,
 				424B518C1E696915003BFCBE /* GJTableViewCell3.xib in Resources */,
@@ -291,6 +300,7 @@
 				424B51631E6959C7003BFCBE /* main.m in Sources */,
 				424B51871E696283003BFCBE /* CustomTableView.m in Sources */,
 				424B517F1E69618C003BFCBE /* GJTableViewCell1.m in Sources */,
+				424B51C41E6D4A64003BFCBE /* GJTableViewCell0.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

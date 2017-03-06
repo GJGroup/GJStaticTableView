@@ -10,4 +10,6 @@
 
 @interface GJTableViewCell2 : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *contetnLabel;
+
 @end

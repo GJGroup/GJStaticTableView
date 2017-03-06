@@ -7,12 +7,14 @@
 //  
 
 #import "GJStaticTableView.h"
+#import "GJTableViewCell0.h"
 #import "GJTableViewCell1.h"
 #import "GJTableViewCell2.h"
 #import "GJTableViewCell3.h"
 #import "GJTableViewCell4.h"
 
 @interface CustomTableView : GJStaticTableView
+@property (nonatomic, strong) GJTableViewCell0 *cell0;
 @property (nonatomic, strong) GJTableViewCell1 *cell1;
 @property (nonatomic, strong) GJTableViewCell2 *cell2;
 @property (nonatomic, strong) GJTableViewCell3 *cell3;
