@@ -10,7 +10,7 @@
 #import "GJStaticTableView.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
-#import <UITableView+FDTemplateLayoutCell.h>
+#import "UITableView+FDTemplateLayoutCell.h"
 #import "GJStaticCellPotocol.h"
 
 BOOL canResponseProtocolMethod(id obj, Protocol *protocol, SEL selector) {
