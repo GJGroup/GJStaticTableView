@@ -99,6 +99,7 @@ run一下看看效果
 - `tableView:heightForRowAtIndexPath:`
 - `tableView:numberOfRowsInSection:`
 - `tableView:cellForRowAtIndexPath:`
+
 你需要注意他们对你自定义代理方法的影响
 
 ## Bugs and Issues
