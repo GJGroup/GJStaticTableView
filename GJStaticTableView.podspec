@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'GJStaticTableView'
   s.summary      = 'A static TableView, like TableView in StoryBoard'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2.beta'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'wangyutao' => 'wangyutao0424@163.com' }
   s.homepage     = 'https://github.com/GJGroup/GJStaticTableView'
